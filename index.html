@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PSVita Performance Database</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>PSVita Performance Database</h1>
+    <p>A community-driven collection of recommended clocks, framerate limits, and resolutions for PSVita games.</p>
+  </header>
+
+  <section class="intro">
+    <h2>Overview</h2>
+    <p>
+      Most PSVita games are primarily <strong>CPU-bound</strong>. This means that increasing resolution often leads to 
+      diminishing returns in performance. Lowering resolution may help in GPU-heavy titles, but in many cases the CPU 
+      remains the bottleneck.
+    </p>
+    <h3>Tools Explained</h3>
+    <ul>
+      <li><strong>PSVShell</strong>: A plugin that allows overclocking the Vita’s CPU/GPU/BUS/XBAR components, and monitoring system performance.</li>
+      <li><strong>PSVShell Plus</strong>: An enhanced version of PSVShell directed situated in the Quick Menu, with additional stability and current-draw tracking.</li>
+      <li><strong>VitaGrafix</strong>: A plugin that lets you change the framerate limit and resolution (whether internal resolution, or framebuffer) per game, reducing GPU load and improving framerate stability.</li>
+    </ul>
+  </section>
+
+  <section class="database">
+    <h2>Community Recommendations</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Game</th>
+          <th>Framerate</th>
+          <th>Resolution</th>
+          <th>Overclocks</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Borderlands 2</td>
+          <td>~15FPS → ~20-27FPS</td>
+          <td>Native (544p)</td>
+          <td>CPU 500MHz, BUS 222MHz</td>
+          <td>CPU OC improves overall framerates and asset streaming. BUS OC further improves asset streaming.</td>
+        </tr>
+        <tr>
+          <td>Lemmings Touch</td>
+          <td>30 → 60 FPS</td>
+          <td>Native (544p)</td>
+          <td>GPU 222MHz</td>
+          <td>Undeniably GPU-bound. CPU OC has little effect.</td>
+        </tr>
+        <tr>
+          <td>Octodad: Dadliest Catch</td>
+          <td>30 FPS → ~45-60 FPS</td>
+          <td>Native (544p)</td>
+          <td>GPU 500Mhz</td>
+          <td>Undeniably GPU-bound. CPU OC has little effect.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>Built by the community · Share your findings to improve the database!</p>
+  </footer>
+</body>
+</html>
 
